@@ -25,11 +25,12 @@ const onFileChange = (event) => {
 </script>
 <template>
 <input type="file" id="file" class="hidden" @change="onFileChange">
+<input type="file" id="camera" accept="image/*" capture="camera" class="hidden" @change="onFileChange">
+
   <div class="w-screen h-screen bg-gray-500 ">
     <div v-if="!imageSrc" class="w-full h-full flex flex-col justify-center items-center text-white [&>div]:border [&>div]:border-gray-300 [&>div]:p-2 [&>div]:m-2 [&>div]:rounded-xl [&>div]:bg-gray-600">
-      <div>Сделать снимок</div>
+      <div onclick=" document.getElementById('camera').click(); ">Сделать снимок</div>
       <div @click="downloadImage">Загрузить картинку</div>
-      <input type="file" accept="image/*" capture="camera" @change="onFileChange">
     
       
     </div>
