@@ -39,7 +39,7 @@ const onFileChange = (event) => {
         <img class="w-full h-full " v-if="imageSrc" :src="imageSrc" alt="Uploaded Image">
       </div>
       <div class="[&>button]:w-12 [&>button]:h-12 [&>button]:bg-gray-100 [&>button]:text-white [&>button]:m-2 [&>button]:rounded-[50%] [&>button]:bg-center [&>button]:bg-no-repeat [&>button]:bg-contain">
-        <button @click="downloadImage" class="bg-[url('src/assets/svg/download.svg')] "></button ><button class="bg-[url('src/assets/svg/que.svg')] "></button><button></button><button></button>
+        <button @click="downloadImage" class="bg-[url('/svg/download.svg')] "></button ><button class="bg-[url('/svg/que.svg')] "></button><button></button><button></button>
       </div>
     </div>
   </div>
